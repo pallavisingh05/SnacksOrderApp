@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#6398f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Tea"
+        android:background="#6398f5">
+        <EditText
+            android:id="@+id/Name_of_person"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+            android:hint="Your Name?"
+            android:inputType="text"
+            android:maxLength="50"
+            android:textSize="22dp"
+            android:textColor="#272276"/>
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="special indegrients to be added:- "/>
+
+        <CheckBox
+            android:id="@+id/Sugar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sugar Wanted?"
+            android:textSize="20dp"
+            android:textColor="#48164b"/>
+
+        <CheckBox
+            android:id="@+id/Ginger"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ginger and Other Spices?"
+            android:textSize="20dp"
+            android:textColor="#48164b" />
+
+        <TextView
+            style="@style/HeaderStyle"
+            android:text="quantity!"
+            android:layout_marginBottom="4dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:onClick="decrement"
+                android:text="-"
+                android:textColor="#FCFDED"
+                android:textSize="16dp"
+                android:background="#272276" />
+
+            <TextView
+                android:id="@+id/Text_of_Quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="2"
+                android:textColor="#48164b"
+                android:textSize="16dp" />
+
+            <Button
+                android:layout_width="56dp"
+                android:layout_height="wrap_content"
+                android:onClick="increment"
+                android:text="+"
+                android:textSize="16dp"
+                android:textColor="#FCFDED"
+                android:background="#272276" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Price_of_Tea"
+            style="@style/HeaderStyle"
+            android:text="click order to order!"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/OrderButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:onClick="DisplayOrder"
+                android:text="order"
+                android:textAllCaps="true"
+                android:background="#272276"
+                android:textColor="#FCFDED" />
+
+            <Button
+                android:id="@+id/ResetButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/OrderButton"
+                android:onClick="ResetEveryThing"
+                android:text="reset"
+                android:textAllCaps="true"
+                android:background="#272276"
+                android:textColor="#FCFDED"  />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

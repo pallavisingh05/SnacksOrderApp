@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.justjava">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/indiansnacks"
+        android:label="Singh Snacks"
+        android:roundIcon="@drawable/indiansnacks"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Tea" android:label="Tea"></activity>
+        <activity android:name=".Coffee" android:label="Coffee"/>
+        <activity
+            android:name=".Beverages"
+            android:label="Beverages" />
+        <activity
+            android:name=".OtherSnack3"
+            android:label="Italian Snacks" />
+        <activity
+            android:name=".OtherSnack2"
+            android:label="Chinese Snacks" />
+        <activity
+            android:name=".OtherSnack"
+            android:label="Indian Snacks" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

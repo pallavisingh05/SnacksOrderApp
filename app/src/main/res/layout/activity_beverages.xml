@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#6398f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Beverages"
+        android:background="#6398f5">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="8dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:textAllCaps="true"
+                android:text="what you want drink?"
+                style="@style/snacksoption"
+                android:background="#272276"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textSize="20dp"
+                android:layout_weight="1"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Tea_view">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/tea"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/Tea_image"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/snacksoption"
+                    android:text="Tea"
+                    android:background="#272276"
+                    android:layout_weight="1"
+                    android:layout_marginBottom="10dp"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/Coffee_view">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:src="@drawable/coffee"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/Coffee_ki_image"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    style="@style/snacksoption"
+                    android:text="Coffee"
+                    android:background="#272276"
+                    android:layout_weight="1"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
